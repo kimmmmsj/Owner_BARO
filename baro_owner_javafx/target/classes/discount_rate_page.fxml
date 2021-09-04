@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.baro.controllers.DiscountRateController"
+            stylesheets="css/vbox_hover_highlight.css"
+            prefHeight="280.0" prefWidth="300.0"
+            style="-fx-background-color: #3d3d3d; -fx-border-color: gray;-fx-border-width: 1" spacing="10">
+    <padding>
+        <Insets top="10" bottom="10" left="10" right="10"/>
+    </padding>
+    <HBox fx:id="top_bar" maxWidth="Infinity" spacing="15" alignment="TOP_RIGHT" style="-fx-background-color: #282828"  maxHeight="Infinity" minHeight="-Infinity" minWidth="-Infinity">
+        <padding>
+            <Insets top="10" bottom="10" right="10"/>
+        </padding>
+        <FontAwesomeIconView fx:id="close" glyphName="CLOSE" style="-fx-fill: white;-fx-font-size: 20pt" textAlignment="CENTER">
+            <HBox.margin>
+                <Insets top="7"/>
+            </HBox.margin>
+        </FontAwesomeIconView>
+    </HBox>
+    <VBox alignment="TOP_CENTER" spacing="5">
+        <Label text="할인률 설정 " HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" alignment="CENTER" textAlignment="CENTER" style="-fx-font-size: 20pt;
+        -fx-text-fill: white;-fx-font-weight: bold;-fx-font-family: 'IBM Plex Sans KR';" />
+
+        <HBox alignment="CENTER" spacing="10"  maxHeight="Infinity" maxWidth="Infinity" minHeight="-Infinity" minWidth="-Infinity">
+            <Button fx:id="minus" text="-" prefHeight="20" style="-fx-font-size: 20pt;-fx-text-fill: white;-fx-font-weight: bold;
+            -fx-font-family: 'IBM Plex Sans KR'; -fx-focus-color: gray;-fx-background-color: #8333e6;" HBox.hgrow="ALWAYS">
+                <padding>
+                    <Insets right="18" left="18"/>
+                </padding>
+            </Button>
+            <Label fx:id="setNewDiscountRate"  prefWidth="50" style="-fx-font-size: 14pt;-fx-text-fill: #8333e6;-fx-font-weight: bold;
+            -fx-font-family: 'IBM Plex Sans KR'; -fx-focus-color: gray; -fx-background-color: white; -fx-background-radius: 5px;" textAlignment="CENTER" alignment="CENTER"  >
+                <padding>
+                    <Insets top="5" bottom="5" right="5" left="5"/>
+                </padding>
+            </Label>
+            <Button fx:id="plus" text="+" style="-fx-font-size: 20pt;-fx-text-fill: white;-fx-font-weight: bold;
+            -fx-font-family: 'IBM Plex Sans KR'; -fx-focus-color: gray;-fx-background-color: #8333e6;">
+                <padding>
+                    <Insets right="18" left="18"/>
+                </padding>
+            </Button>
+        </HBox>
+
+    </VBox>
+    <HBox alignment="BOTTOM_CENTER" VBox.vgrow="ALWAYS">
+        <Button fx:id="setButton" text="설정" maxWidth="Infinity"  style="-fx-font-size: 20pt; -fx-text-fill: white;-fx-font-weight: bold;-fx-font-family: 'IBM Plex Sans KR';
+-fx-background-color: #8333e6;-fx-background-radius: 5" onAction="#clickSetButton" HBox.hgrow="ALWAYS"/>
+    </HBox>
+
+</VBox>

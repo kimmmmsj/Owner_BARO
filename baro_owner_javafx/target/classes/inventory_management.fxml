@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Priority?>
+<?import javafx.scene.control.ListView?>
+<VBox xmlns="http://javafx.com/javafx"
+      fx:id="base"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.baro.controllers.InventoryController"
+>
+        <JFXTabPane fx:id="categoryTabPane" stylesheets="css/tab_pane.css" />
+        <GridPane fx:id="menuList_header" prefHeight="40" style="-fx-font-size:18pt;-fx-font-family: 'IBM Plex Sans KR'"/>
+        <ListView fx:id="menuList" VBox.vgrow="SOMETIMES" stylesheets="css/list_view.css"/>
+</VBox>

@@ -1,0 +1,18 @@
+#subtext {
+    -fx-font-size: 20px;
+    -fx-font-family: 'IBM Plex Sans KR';
+    -fx-fill: #8333e6;
+}
+#baro_logo {
+    -fx-font-size: 50px;
+    -fx-font-family: 'IBM Plex Sans KR Bold';
+    -fx-fill: #8333e6;
+}
+.jfx-check-box {
+    -jfx-checked-color: #8333e6;
+    -jfx-unchecked-color: #8333e6;
+}
+
+.jfx-check-box:selected .mark{
+    -fx-border-color: white;
+}

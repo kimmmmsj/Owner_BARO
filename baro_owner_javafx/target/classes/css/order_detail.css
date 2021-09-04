@@ -1,0 +1,19 @@
+/*!** {*!*/
+/*!*    -fx-font-family: "IBM Plex Sans KR";*!*/
+/*!*    -fx-font-size: 25px;*!*/
+/*!*}*!*/
+Label {
+    -fx-font-family: "IBM Plex Sans KR";
+    -fx-font-size: 20px;
+}
+Button {
+    -fx-font-family: "IBM Plex Sans KR";
+    -fx-font-size: 25px;
+    -fx-background-radius: 5px;
+    -fx-background-color: #8333e6;
+    -fx-text-fill: white
+}
+Label.label-left{
+    -fx-font-family: "IBM Plex Sans KR";
+    -fx-font-size: 17px;
+}
